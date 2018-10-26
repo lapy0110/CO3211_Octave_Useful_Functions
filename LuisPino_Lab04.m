@@ -6,11 +6,37 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EJERCICIO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% PREGUNTA A
-A=[]
+
+% Creamos la matriz A
+A=[];
 for i=1:1:1000
     for j=1:1:1000
-        if i=j
-            A(i,j)=-500000
+        if i==j
+            A(i,j)=-500000;
         else
-            A(i,j)=menor()
+            A(i,j)=menor(i,j);
+        end
+    end
+end
+Mensaje1=1;
+Mensaje1
+
+% Creamos el vector B
+B=[];
+for i=1:1:1000
+    B(1,i)=i;
+end
+
+Mensaje2=2;
+Mensaje2
+%%% PREGUNTA A
+tic;
+[AG,BG]=Gauss_NoPivoteo(A,B);
+STG=sust_atras(AG,BG);
+toc
+
+%%% PREGUNTA B
+tic;
+STLU=sistemaLU(A,B);
+toc
+

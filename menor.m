@@ -1,6 +1,6 @@
 function x = menor(i,j)
     if i>j
-        x=i
+        x=i;
     else
-        x=j
+        x=j;
 end
