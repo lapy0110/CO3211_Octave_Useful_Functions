@@ -14,12 +14,14 @@
 
 A1=[0.641 0.242; 0.321 0.121];
 A2=[10 -7 0; -3 2 6; 5 -1 5];
+A3=
+A4=
+A5=
+A6=
+A7=
 
 Y1= rand(length(A1),1);
 Y2= rand(length(A2),1);
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROCEDIMIENTO 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Luego, como segunda idea, concentre su atencíon en vectores y cuyas componentes sean 1 o −1
