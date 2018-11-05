@@ -2,8 +2,9 @@ function Ncond1 = Cond1Modificado(A)
     S11=[];
     for i=1:1:5 
         for i=1:1:length(A)
-            YP=[YP,-1.^rand];
+            YP=[YP,((-1)^randi([1 6]))];
         end
+
         ZP=sistemaLU(A,YP);
     
         NCond1P=norm(ZP,1)/norm(YP,1);
