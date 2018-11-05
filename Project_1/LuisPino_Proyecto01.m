@@ -23,6 +23,56 @@ CondAprox11=Cond1(A1)
 CondExactoInf1=cond(A1,inf)
 CondExacto11=cond(A1,1)
 
+% Para A2
+
+display('')
+display('Para la Matriz A2')
+
+CondAproxInf1=CondInf(A2)
+CondAprox11=Cond1(A2)
+CondExactoInf1=cond(A2,inf)
+CondExacto11=cond(A2,1)
+
+% Para A3
+
+display('')
+display('Para la Matriz A3')
+
+CondAproxInf1=CondInf(A3)
+CondAprox11=Cond1(A3)
+CondExactoInf1=cond(A3,inf)
+CondExacto11=cond(A3,1)
+
+% Para A5
+
+display('')
+display('Para la Matriz A5')
+
+CondAproxInf1=CondInf(A5)
+CondAprox11=Cond1(A5)
+CondExactoInf1=cond(A5,inf)
+CondExacto11=cond(A5,1)
+
+% Para A6
+
+display('')
+display('Para la Matriz A6')
+
+CondAproxInf1=CondInf(A6)
+CondAprox11=Cond1(A6)
+CondExactoInf1=cond(A6,inf)
+CondExacto11=cond(A6,1)
+
+% Para A7
+
+display('')
+display('Para la Matriz A7')
+
+CondAproxInf1=CondInf(A7)
+CondAprox11=Cond1(A7)
+CondExactoInf1=cond(A7,inf)
+CondExacto11=cond(A7,1)
+
 
 %%% PROCEDIMIENTO 2 
 
