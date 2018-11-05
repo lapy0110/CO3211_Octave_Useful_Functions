@@ -12,9 +12,17 @@
 % que ofrece MATLAB en norma 1 y norma infinito. Por favor, tome ventaja de la factorizacion LU
 % de A ya obtenida al resolver el sistema original, en esto radica la eficiencia.
 
+A1=[0.641 0.242; 0.321 0.121];
+A2=[10 -7 0; -3 2 6; 5 -1 5];
+
+Y1= rand(length(A1),1);
+Y2= rand(length(A2),1);
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROCEDIMIENTO 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%Luego, como segunda idea, concentre su atenci ́on en vectores y cuyas componentes sean 1 o −1
+%Luego, como segunda idea, concentre su atencíon en vectores y cuyas componentes sean 1 o −1
 %escogidos en forma aleatoria de nuevo, y obtenga cotas inferiores para la cond(A).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROCEDIMIENTO 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -25,4 +33,4 @@
 % posiciones menos en la k donde tiene un 1.
 % Calcule kxk1 y  ́uselo como cota inferior de kA−1k1 (justifique por qu ́e s ́olo kxk1 para el c ́alculo de la
 % cota inferior de kA−1k1). Compare con los resultados aleatorios. Comente los resultados observados
-% y trate de explicar el por qu ́e de lo observado.
+% y trate de explicar el por qúe de lo observado.
