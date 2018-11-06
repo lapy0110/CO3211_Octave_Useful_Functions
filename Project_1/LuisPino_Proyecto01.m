@@ -74,17 +74,74 @@ CondExactoInf1=cond(A7,inf)
 CondExacto11=cond(A7,1)
 
 
-%%% PROCEDIMIENTO 2 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROCEDIMIENTO 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%Luego, como segunda idea, concentre su atencíon en vectores y cuyas componentes sean 1 o −1
-%escogidos en forma aleatoria de nuevo, y obtenga cotas inferiores para la cond(A).
+display('NUMERO DE CONDICIÓN A TRAVES DEL PROCEDIMIENTO 2')
+% Para A1
 
-%%% PROCEDIMIENTO 3 
+display('')
+display('Para la Matriz A1')
 
-% Por  ́ultimo considere la siguiente idea: resolver primero el sistema Ax = b donde bi = 1/n para
-% todo i; luego resolver A↑t*z=y donde yi = 1 si xi ≥ 0, y yi = −1 si xi < 0; asignar al  ́ındice
-% k = arg max{|zi|, 1 ≤ i ≤ n}, y resolver de nuevo Ax = b donde ahora b tiene ceros en todas las
-% posiciones menos en la k donde tiene un 1.
-% Calcule kxk1 y  ́uselo como cota inferior de kA−1k1 (justifique por qu ́e s ́olo kxk1 para el c ́alculo de la
-% cota inferior de kA−1k1). Compare con los resultados aleatorios. Comente los resultados observados
-% y trate de explicar el por qúe de lo observado.
+CondAproxInf1=CondInfModificado(A1)
+CondAprox11=Cond1Modificado(A1)
+
+% Para A2
+
+display('')
+display('Para la Matriz A2')
+
+CondAproxInf1=CondInfModificado(A2)
+CondAprox11=Cond1Modificado(A2)
+
+% Para A3
+
+display('')
+display('Para la Matriz A3')
+
+CondAproxInf1=CondInfModificado(A3)
+CondAprox11=Cond1Modificado(A3)
+
+% Para A5
+
+display('')
+display('Para la Matriz A5')
+
+CondAproxInf1=CondInfModificado(A5)
+CondAprox11=Cond1Modificado(A5)
+
+% Para A6
+
+display('')
+display('Para la Matriz A6')
+
+CondAproxInf1=CondInfModificado(A6)
+CondAprox11=Cond1Modificado(A6)
+
+% Para A7
+
+display('')
+display('Para la Matriz A7')
+
+CondAproxInf1=CondInfModificado(A7)
+CondAprox11=Cond1Modificado(A7)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROCEDIMIENTO 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+display('NUMERO DE CONDICIÓN A TRAVES DEL PROCEDIMIENTO 3')
+%Para A1
+display('Para la Matriz A1')
+CondAproxInf1=cond3(A1)
+%Para A2
+display('Para la Matriz A2')
+CondAproxInf1=cond3(A2)
+%Para A3
+display('Para la Matriz A3')
+CondAproxInf1=cond3(A3)
+%Para A5
+display('Para la Matriz A5')
+CondAproxInf1=cond3(A5)
+%Para A6
+display('Para la Matriz A6')
+CondAproxInf1=cond3(A6)
+%Para A7
+display('Para la Matriz A7')
+CondAproxInf1=cond3(A7)

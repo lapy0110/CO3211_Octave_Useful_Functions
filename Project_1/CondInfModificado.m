@@ -1,6 +1,6 @@
 function NcondInf = CondInfModificado(A)
     Sinf=[];
-    for i=1:1:5 
+    for i=1:1:50 
         YP=[];
         for i=1:1:length(A)
             YP=[YP,((-1)^randi([1 6]))];
@@ -8,8 +8,8 @@ function NcondInf = CondInfModificado(A)
         ZP=sistemaLU(A,YP);
     
         NCondInfP=norm(ZP,inf)/norm(YP,inf);
-        Sinf=[Sinf,NCondInfP]
+        Sinf=[Sinf,NCondInfP];
     end
 
-    NcondInf=max(max(Sinf));
+    NcondInf=norm(A,inf)*(max(max(Sinf)));
 end

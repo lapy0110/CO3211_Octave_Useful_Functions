@@ -1,6 +1,6 @@
 function NcondInf = CondInf(A)
     Sinf=[];
-    for i=1:1:5 
+    for i=1:1:50 
         YP=rand(length(A),1);
         ZP=sistemaLU(A,YP);
     
@@ -8,5 +8,6 @@ function NcondInf = CondInf(A)
         Sinf=[Sinf,NCondInfP];
     end
 
-    NcondInf=max(max(Sinf));
+    NormaInversa=max(max(Sinf));
+    NcondInf=norm(A,inf)*NormaInversa;
 end
