@@ -8,7 +8,7 @@ function NcondInf = CondInfModificado(A)
         ZP=sistemaLU(A,YP);
     
         NCondInfP=norm(ZP,inf)/norm(YP,inf);
-        Sinf=[Sinf,NCondInfP];
+        Sinf=[Sinf,NCondInfP]
     end
 
     NcondInf=max(max(Sinf));

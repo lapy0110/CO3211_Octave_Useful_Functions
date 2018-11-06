@@ -1,5 +1,6 @@
 function Ncond1 = Cond1Modificado(A)
     S11=[];
+    YP=[];
     for i=1:1:5 
         for i=1:1:length(A)
             YP=[YP,((-1)^randi([1 6]))];
