@@ -1,1 +1,1 @@
-function s=SplineCubico(x,q,)
+function s = SplineCubico(x,q,)

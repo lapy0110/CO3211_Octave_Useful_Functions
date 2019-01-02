@@ -14,14 +14,14 @@ será penalizada con la anulación de la actividad y la sanción administrativa 
 Se propone el siguiente problema: hallar una aproximación de la longitud de la lı́nea de costa de la
 Penı́nsula de Paraguaná (ver la imagen en el archivo paraguana.bmp) usando splines cúbicos.
 
+![Paraguaná ](paraguana.bmp)
+
 Para resolver este problema debe seguir los siguientes pasos:
 1. Escriba una función de nombre “SplineCubico” en Matlab que calcule el spline cúbico libre o
 amarrado correspondiente a n + 1 puntos (x i , y i ), i = 0, 1, ..., n, cuyas abscisas son todas distin-
 tas. Además de las coordenadas de los puntos que determinan al spline, esta función recibirá dos
 parámetros opcionales que representan las condiciones de spline cúbico amarrado. Cuando estos
-parámetros no estén presentes, se entenderá que la condición de frontera es libre. Como resultado,
-USB, CO3211, Prof. Saúl Buitrago2
-la función devolverá los coeficientes de los polinomios que conforman el spline.
+parámetros no estén presentes, se entenderá que la condición de frontera es libre. Como resultado, la función devolverá los coeficientes de los polinomios que conforman el spline.
 NOTA: No se puede usar la función “spline” de Matlab.
 2. Escriba una función de nombre “LongitudArco” en Matlab que calcule la longitud de una curva,
 descrita por un polinomio de grado tres, sobre un intervalo dado. Use la función “quad” de Matlab

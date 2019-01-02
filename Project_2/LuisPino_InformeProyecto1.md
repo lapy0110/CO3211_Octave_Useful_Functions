@@ -3,18 +3,20 @@
 ### Calculo Numérico – CO3211
 ### Prof. Saúl Buitrago
 
-# Informe Proyecto 2 
+# Informe Proyecto 2 - Península de Paraguaná
 
 ## Autor
-* Luis Alfonso Pino (15-11138) 
+* Luis Alfonso Pino (15-11138). 
 
 ## Resumen
-
+El proyecto se enfoca en desarrollar un programa que halle una aproximación de la longitud de la lı́nea de costa de la Penı́nsula de Paraguaná usando los conceptos de spline cubico, metodo anidado de Horner y Polinomios vistos en las clases previas.
 
 ## Implementación
 
-* La funcion de **insertion-sort** 
-
+* La funcion de **LongitudArco** esta diseñada para calcular la longitud de arco de una función polinomica de grado 3, recibiendo como argumentos los coeficientes de esta función. El desarrollo de esta se hace en base a la formula de longitud de arco matemtica que dice:
+* La funcion de **Horner** 
+* La funcion de **LongitudLineaCosta** 
+* La funcion de **SplineCubico** 
 
 ## Analisis de Resultados
 
@@ -33,20 +35,7 @@ En base a las pruebas realizadas utilizando el programa del proyecto, obtenemos 
 | Radix sort           	|26.66 |28.28  |33.36   |43.69   |67.10  |77.84 |118.41 |       
 | Bucket sort          	|8.20 |188.07 |720.32  |2891.20 |11783.50|18860.94|48419.92|
 
-## Desviacion Estandar 
 
-|                       |  1000 |  5000  | 10000  | 20000   | 40000 | 50000 | 80000 |
-|-----------------------|-------|--------|--------|---------|-------|-------|-------|
-| Insertion            	| 3.83|173.59|733.42|1733.29|2391.42|27125.79|53776.76|
-| Merge Sort           	|0.44 |1.26  |4.20  |5.00   |13.17|8.29 |17.40|
-| Heap Sort            	|0.66 |2.17  |8.25  |13.88  |20.01|29.82|20.86|
-| Quicksort            	|0.51 |1.49  |3.70  |12.25  |23.12|33.95|55.12|
-| Randomized Quicksort 	|0.86 |2.54  |2.49  |  9.41 |18.53|17.73|53.29|
-| Counting sort        	|0.52 |0.59  |2.94  |4.67   | 3.87 |  1.49     | 1.89      |
-| Radix sort           	|6.18 |5.11  |4.41  |2.35   |3.47 |2.41 |7.13 |
-| Bucket sort          	|1.01 |9.07  |16.37 |99.98  |286.88|1071.34|1552.63|
-
-Al igual que de Manera independiente obtenemos las siguientes graficas:
 
 ### InsertionSort
 ![Grafico HeapSort ](./graficos/Insertionsort.png)
