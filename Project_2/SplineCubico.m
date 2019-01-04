@@ -9,29 +9,7 @@ function s = SplineCubico(x,y,k1,k2)
   Aux = zeros(Largo,1);
 
   if(nargin==2)
-    largoFL = length(a)-1;
-    yfl=y
-
-    A(1,1)=1;
-    A(largoFL+1,largoFL+1)=1;
-
-    for i = 2:largoFL
-      A(i,i+1) = yfl(i);
-      A(i,i-1) = yfl(i-1);
-      A(i,i) = 2*(yfl(i)+yfl(i-1));
-    end
-
-    b = zeros(largoFL+1,1);
-    b(1)=0;
-    b(largoFL+1)=0;
-
-    for i=2:largoFL
-      b(i) = (6/yfl(i))*(a(i+1)-a(i)) - (6/yfl(i-1))*(a(i)-a(i-1));
-    end
-
-    Aux = A\b;
-    Aux = c/2;
-
+    Aux = FronteraLibre(A,y);
   else
     Aux = Amarrado(A,y,k1,k2);
   end
