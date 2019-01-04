@@ -51,6 +51,10 @@ Graficar(x6,y6,S6);
 Graficar(x7,y7,S7);
 Graficar(x8,y8,S8);
 Graficar(x9,y9,S9);
-Graficar(x10,y10,S10);
+
+% Dado que la implementación de este proyecto se hizo utilizando GNU Octave
+% se exporta la grafica en formato ofig en vez de formato fig
+hgsave('paraguana');
 
 %%% PARTE 2 - CALCULO DE LA LONGITUD DE LA COSTA
+LLC=LongitudLineaCosta()

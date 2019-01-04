@@ -1,6 +1,6 @@
 function Graficar(x,y,Spline)  
     n = length(x);
-    Puntos = 20;
+    Puntos = 15;
 
     for i=1:n-1
         x2 = linspace(x(i),x(i+1),Puntos);
