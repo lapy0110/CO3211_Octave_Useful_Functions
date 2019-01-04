@@ -1,4 +1,4 @@
-function LA = LongitudArco(c0,c1,c2,c3,a,b)
-    func = @(x) ((1+(3*c3*x^2 + 2*c2*x + c1))^1/2);
+function LA = LongitudArco(coef,a,b)
+    func = @(x) (sqrt(1 +(coef(2)+2*coef(3)*(x-a)+3*coef(4)*(x-a).^2).^2)));
     LA = quad(func,a,b);
 end

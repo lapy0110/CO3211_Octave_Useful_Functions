@@ -1,7 +1,7 @@
-function [eval] = Horner(coef, x)
+function evaluado = Horner(coef, x, xaux)
   n = length(coef);
-  eval = coef(1);
-  for i=2:1:n
-    eval = (eval * x) + coef(i);
+  evaluado = coef(n);
+  for i=n-1:-1:1
+    evaluado = (evaluado * (x-xaux) + coef(i);
   end
 end

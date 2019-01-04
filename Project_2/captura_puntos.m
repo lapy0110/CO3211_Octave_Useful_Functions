@@ -1,6 +1,5 @@
-function [x,y] = captura_puntos
-%a=imread('paraguana_puntos_en_contorno.bmp');
-a=imread('paraguana_escala.bmp'); 
+function [x,y] = captura_puntos(imagen)
+a=imread(imagen); 
 %escala 10 Km de (41,469) a (107,469)
 pixvert=size(a,1);
 pixhor=size(a,2);

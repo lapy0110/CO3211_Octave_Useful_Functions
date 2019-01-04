@@ -4,3 +4,5 @@
 
 % Proyecto 2 - 03/01/2019
 
+% Hacemos la captura de los puntos de la imagen paraguana.bmp
+[x,y]=captura_puntos
