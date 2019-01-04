@@ -2,6 +2,8 @@ function s = SplineCubico(x,y,k1,k2)
   Largo = length(x);
   A = zeros(Largo-1,1);
 
+  % Creamos la matriz A cuya función es alojar los resultados 
+
   for j=1:Largo-1
     A(j) = x(j+1)-x(j);
   end
